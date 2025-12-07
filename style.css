@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    padding: 30px;
+    background: #121212;
+    border-right: 1px solid #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 14px;
+    padding: 6px 12px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info {
+    width: 100%;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.social img {
+    width: 26px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.tabs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #777;
+    padding-bottom: 5px;
+    transition: .2s;
+}
+
+.tabs a.active,
+.tabs a:hover {
+    color: #fff;
+    border-bottom: 2px solid #ff4d4d;
+}
+
+.section h1 {
+    font-size: 36px;
+}
+
+.section h2 {
+    margin-top: 40
