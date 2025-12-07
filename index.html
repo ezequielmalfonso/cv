@@ -2,31 +2,104 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ezequiel Alfonso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .sidebar {
+            background: #ffffff;
+            border-right: 1px solid #ddd;
+            min-height: 100vh;
+            padding: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #444;
+        }
+        .card-custom {
+            border: none;
+            padding: 20px;
+            border-radius: 8px;
+            background: #ffffff;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Ezequiel Alfonsommmmmmmmmmmmmmmmmmm</h1>
-        <h2>Administrador de Bases de Datos / DevOps</h2>
-    </header>
+<div class="container-fluid">
+    <div class="row">
 
-    <section id="about">
-        <h3>Sobre mí</h3>
-        <p>Soy DBA con experiencia en MySQL, Redis, Oracle y sistemas distribuidos.</p>
-    </section>
+        <!-- Sidebar -->
+        <div class="col-md-3 sidebar text-center">
+            <img src="assets/profile.jpg" class="profile-pic" alt="Foto de perfil">
+            <h2>Ezequiel Alfonso</h2>
+            <p class="text-muted">Administrador de Bases de Datos / DevOps</p>
 
-    <section id="projects">
-        <h3>Proyectos</h3>
-        <ul>
-            <li><strong>Ecopuntos360:</strong> PWA con microservicios.</li>
-            <li><strong>Simulación Call Center:</strong> Modelo de eventos discretos.</li>
-        </ul>
-    </section>
+            <hr>
 
-    <section id="contact">
-        <h3>Contacto</h3>
-        <p>Email: ezequiel@example.com</p>
-    </section>
+            <h5>Contacto</h5>
+            <p>Email: ezequiel@example.com</p>
+            <p>Ubicación: Buenos Aires, Argentina</p>
+
+            <a href="#" class="btn btn-dark btn-sm mt-2">Descargar CV</a>
+
+            <div class="mt-4">
+                <a href="#" class="me-3">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9 p-5">
+            <h3 class="section-title">Sobre Mí</h3>
+            <p>
+                Soy un profesional orientado a la administración de bases de datos, infraestructura, rendimiento y
+                automatización. Trabajo con MySQL, Docker, Redis, Linux y sistemas distribuidos. Me interesa optimizar
+                procesos, mejorar la disponibilidad y brindar soluciones técnicas eficientes.
+            </p>
+
+            <h3 class="section-title">Experiencia / Lo que hago</h3>
+            <div class="card-custom">
+                <h5>Administración de Bases de Datos</h5>
+                <p>MySQL 5.7/8.0, backups, rendimiento, configuración de servidores y replicación.</p>
+            </div>
+            <div class="card-custom">
+                <h5>DevOps / Infraestructura</h5>
+                <p>Docker, contenedores, automatización, entornos Linux, monitoreo.</p>
+            </div>
+            <div class="card-custom">
+                <h5>Desarrollo y análisis</h5>
+                <p>Scripts, herramientas de análisis, automatización de tareas, mejora continua.</p>
+            </div>
+
+            <h3 class="section-title">Proyectos</h3>
+            <div class="card-custom">
+                <h5>Ecopuntos360</h5>
+                <p>PWA con microservicios, Redis, gateway y backend en Java.</p>
+            </div>
+            <div class="card-custom">
+                <h5>Simulación de Call Center</h5>
+                <p>Modelo basado en eventos discretos para optimizar operadores internos y externos.</p>
+            </div>
+            <div class="card-custom">
+                <h5>Modernización de Sistemas de Museos</h5>
+                <p>Arquitectura propuesta para escalar infraestructura y mejorar servicios de atención.</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
